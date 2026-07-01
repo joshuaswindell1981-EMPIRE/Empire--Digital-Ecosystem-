@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "baseUrl": ".",
+    "paths": {
+      "@empire/core/*": ["packages/core/*/src"],
+      "@empire/ai/*": ["packages/ai/*/src"],
+      "@empire/economy/*": ["packages/economy/*/src"],
+      "@empire/world/*": ["packages/world/*/src"],
+      "@empire/platform/*": ["packages/platform/*/src"],
+      "@apps/*": ["apps/*/src"]
+    },
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "composite": true,
+    "incremental": true
+  }
+}

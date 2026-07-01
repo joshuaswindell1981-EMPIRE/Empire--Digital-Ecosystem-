@@ -1,0 +1,31 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "files": [],
+  "references": [
+    { "path": "./packages/core/kernel" },
+    { "path": "./packages/core/events" },
+    { "path": "./packages/core/ledger" },
+    { "path": "./packages/core/treasury" },
+    { "path": "./packages/core/identity" },
+    { "path": "./packages/ai/eve" },
+    { "path": "./packages/ai/sentinel" },
+    { "path": "./packages/economy/marketplace" },
+    { "path": "./packages/economy/mint" },
+    { "path": "./packages/economy/royalty" },
+    { "path": "./packages/economy/publishing" },
+    { "path": "./packages/economy/media" },
+    { "path": "./packages/economy/marketing" },
+    { "path": "./packages/world/engine" },
+    { "path": "./packages/world/districts" },
+    { "path": "./packages/world/observatory" },
+    { "path": "./packages/platform/academy" },
+    { "path": "./packages/platform/network" },
+    { "path": "./packages/platform/theatre" },
+    { "path": "./packages/platform/studio" },
+    { "path": "./packages/platform/estate" },
+    { "path": "./packages/registry" }
+  ]
+}
