@@ -17,6 +17,16 @@ export function replay(): EventEnvelope[] {
   }, [] as EventEnvelope[]);
 }
 
-export function clearEventLog(): void {
-  eventLog.length = 0;
+// NEVER DELETE EVENTS — ONLY SOFT-FORK LOGICAL VIEWS
+export interface EventFork {
+  forkId: string;
+  createdAt: string;
+  baselineEventId?: string;
+}
+
+export function forkEventView(): EventFork {
+  return {
+    forkId: crypto.randomUUID(),
+    createdAt: new Date().toISOString()
+  };
 }
