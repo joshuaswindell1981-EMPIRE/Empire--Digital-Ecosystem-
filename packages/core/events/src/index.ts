@@ -1,16 +1,6 @@
-export const manifest = {
-  name: "events",
-  version: "1.0.0",
-  layer: "core",
-  dependsOn: ["kernel"],
-  events: ["EVENT_RECORDED", "EVENT_REPLAYED"],
-  cartridges: []
-};
-
-export interface DomainEvent {
-  id: string;
-  type: string;
-  aggregateId: string;
-  timestamp: Date;
-  data: Record<string, unknown>;
-}
+export * from './event.js';
+export * from './envelope.js';
+export * from './store.js';
+export * from './idempotency.js';
+export * from './types.js';
+export * from './manifest.js';
