@@ -1,0 +1,22 @@
+{
+  "name": "empire-os",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The Autonomous Syndicate Operating System",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "pnpm -r --sort build",
+    "lint": "pnpm -r lint",
+    "type-check": "pnpm -r type-check",
+    "test": "pnpm -r test",
+    "smoke-test": "ts-node scripts/smoke-test.ts",
+    "validate-architecture": "ts-node scripts/validate-architecture.ts",
+    "green": "pnpm lint && pnpm type-check && pnpm test && pnpm build && pnpm validate-architecture && pnpm smoke-test"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "ts-node": "^10.9.2",
+    "eslint": "^8.57.0",
+    "only-allow": "^1.2.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@empire/registry",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "type-check": "tsc --noEmit",
+    "test": "echo 'test placeholder'"
+  }
+}

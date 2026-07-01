@@ -1,0 +1,8 @@
+packages:
+  - 'apps/*'
+  - 'packages/core/*'
+  - 'packages/ai/*'
+  - 'packages/economy/*'
+  - 'packages/world/*'
+  - 'packages/platform/*'
+  - 'packages/registry'
